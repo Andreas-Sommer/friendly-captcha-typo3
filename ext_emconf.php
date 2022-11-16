@@ -6,10 +6,10 @@ $EM_CONF['db_friendlycaptcha'] = [
     'category' => 'fe',
     'author' => 'Dragan Balatinac',
     'state' => 'stable',
-    'version' => '1.0.0',
+    'version' => '9.5.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.4.99',
+            'typo3' => '9.5.99',
         ],
     ],
 ];

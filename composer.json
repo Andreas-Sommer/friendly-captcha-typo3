@@ -3,7 +3,7 @@
 	"type": "typo3-cms-extension",
 	"description": "Bot protection for the internet.",
 	"license": "GPL-2.0-or-later",
-	"version": "1.0.0",
+    "version": "9.5.0",
 
 	"support": {
 		"issues": "https://github.com/balatD/db_friendlycaptcha/issues"
@@ -14,11 +14,11 @@
 	],
 
 	"suggest": {
-		"typo3/cms-form": "^10.0"
+		"typo3/cms-form": "^9.5"
 	},
 
 	"require": {
-		"typo3/cms-core": "^10.0"
+		"typo3/cms-core": "^9.5"
 	},
 
 	"autoload": {
@@ -34,7 +34,8 @@
 	"extra": {
 		"typo3/cms": {
 			"cms-package-dir": "{$vendor-dir}/typo3/cms",
-			"web-dir": ".Build/Web"
+			"web-dir": ".Build/Web",
+            "extension-key": "db_friendlycaptcha"
 		}
 	}
 }

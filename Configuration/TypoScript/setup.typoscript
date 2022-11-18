@@ -15,7 +15,7 @@ plugin.tx_friendlycaptcha {
 plugin.tx_form.settings.yamlConfigurations.1998 = EXT:db_friendlycaptcha/Configuration/Yaml/BaseSetup.yaml
 plugin.tx_form.view.partialRootPaths.1998 = EXT:db_friendlycaptcha/Resources/Private/Frontend/Partials/
 
-page.includeJSFooterlibs{
+page.includeJSFooterlibs {
   friendlycaptchaModule = EXT:db_friendlycaptcha/Resources/Public/JavaScript/dist/js/friendly-challenge.widget.module.0.9.8.min.js
   friendlycaptchaModule {
     disableCompression = 1
@@ -29,7 +29,15 @@ page.includeJSFooterlibs{
   friendlycaptcha {
     disableCompression = 1
     excludeFromConcatenation = 1
-    external = 1
+    defer = 1
+    async = 1
+  }
+
+  friendlycaptchaCallback = EXT:db_friendlycaptcha/Resources/Public/JavaScript/dist/js/friendly-captcha-callback.js
+  friendlycaptchaCallback {
+    disableCompression = 1
+    excludeFromConcatenation = 1
+    defer = 1
     async = 1
   }
 }

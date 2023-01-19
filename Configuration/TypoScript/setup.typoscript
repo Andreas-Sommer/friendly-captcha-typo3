@@ -33,7 +33,7 @@ page.includeJSFooterlibs {
     async = 1
   }
 
-  friendlycaptchaCallback = EXT:db_friendlycaptcha/Resources/Public/JavaScript/dist/js/friendly-captcha-callback.js
+  friendlycaptchaCallback = EXT:db_friendlycaptcha/Resources/Public/JavaScript/dist/js/friendly-captcha-callback.min.js
   friendlycaptchaCallback {
     disableCompression = 1
     excludeFromConcatenation = 1
